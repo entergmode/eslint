@@ -907,7 +907,8 @@ target.checkLicenses = function() {
 
         if (impermissible.length) {
             impermissible.forEach(dependency => {
-                console.error("%s license for %s is impermissible.",
+                console.error(
+                    "%s license for %s is impermissible.",
                     dependency.licenses,
                     dependency.name
                 );
